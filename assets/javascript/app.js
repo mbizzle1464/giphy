@@ -87,7 +87,7 @@ $("#addShow").on("click", function (event) {
     var newShow = $("#newShowInput").val().trim();
     // The movie from the textbox is then added to our array
     tvShows.push(newShow.toUpperCase());
-    $("#addShow").empty()
+    $("#newShowInput").val('');  
     renderButtons();
  
 }); 
