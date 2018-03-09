@@ -1,4 +1,4 @@
-var tvShows = ["VANDERPUMP RULES", "BACHELOR IN PARADISE", "SOUTH PARK", "CATFISH", "MODERN FAMILY", "RENO 911", "KEY AND PEELE"];   
+var tvShows = ["VANDERPUMP RULES", "BACHELOR IN PARADISE", "SOUTH PARK", "CATFISH", "MODERN FAMILY", "COPS", "IMPRACTICAL JOKERS"];   
 var currentGif,
     pausedGif, 
     animatedGif, 

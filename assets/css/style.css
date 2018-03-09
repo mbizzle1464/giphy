@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
 }
+/*body*/
 body {
-    background-color: #d3d3d3;  
+    background-color: #d3d3d3; 
 }
-.col-xs-12 {
+.col-md-12 {
     padding: 0px;   
 }
+
+/*gif background*/
 .gif-bg {
     background: url('https://media.giphy.com/media/3oz8xOvhnSpVOs9xza/giphy.gif') no-repeat center center;
     width: 100%;
@@ -17,6 +20,8 @@ body {
     padding: 25px;
     position: relative; 
 }
+
+/*search bar and label*/
 input, label { 
     margin: 10px;   
 }
@@ -25,25 +30,39 @@ h1 {
     color: #ffffff;
     text-shadow: 1px 1px #000000;
 }
+
+/*jumbotron*/
 .jumbotron { 
     margin-bottom: 5px; 
     border-radius: 5px; 
 }
+
+/*appended buttons*/
 #buttons-view {
     margin: 25px auto;   
 }
+
+/*buttons*/
 .showBtn { 
     margin: 10px;  
     font-family: sans-serif;   
     font-size: 18px;      
 }
 
+.logo { 
+    float: right;  
+    width: 100px;    
+}
+
+/*text in label*/
 label { 
     font-family: sans-serif;
     font-size: 25px;    
     color: #d3d3d3; 
     text-shadow: 1px 1px #000000;   
 }
+
+/*size of gifs*/
 .gif {
     width: 380px;
     height: 270px;
@@ -51,25 +70,34 @@ label {
     text-justify: auto;
     margin: 25px auto;
 }
+
+/*justification of gifs in display div*/
 .display { 
     justify-content: space-around;
     align-items: center;
 }
+
+/*buttons*/
 button { 
     margin: 5px; 
     border-radius: 5px;    
 }
+
+/*text in input*/
 input { 
     border-radius: 5px; 
     font-family: sans-serif;
     font-size: 18px;    
 }
+
 h5 { 
     font-family: sans-serif;
     font-size: 18px;
     text-align: center; 
     line-height: 200%;  
 }
+
+/* footer */
 .footer {
     display: flex;  
     text-align: center; 
