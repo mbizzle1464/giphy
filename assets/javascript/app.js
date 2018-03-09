@@ -48,12 +48,13 @@ function renderButtons() {
                 animatedGif = value.images.original.url;
                 pausedGif = value.images.original_still.url;    
                 var thisRating = value.rating;
+                var dataState = "still";    
                 //gives blank ratings 'unrated' text
                 if (thisRating === '') {
                     thisRating = 'unrated';
                 }
                 var rating = $('<h5>').html('Rated: ' + thisRating.toUpperCase()).addClass('ratingStyle');
-                stillGif = $('<img>').attr('data-animated', animatedGif).attr('data-paused', pausedGif).attr('src', pausedGif).addClass('playOnHover').addClass('gif').addClass('img-responsive');
+                stillGif = $('<img>').attr('data-state', dataState).attr('data-animated', animatedGif).attr('data-paused', pausedGif).attr('src', pausedGif).addClass('playOnClick').addClass('gif').addClass('img-responsive');
                 var fullGifDisplay = $('<button>').append(rating, stillGif);
                 $('.display').append(fullGifDisplay);
                  
@@ -64,13 +65,21 @@ function renderButtons() {
 
 
 
-//animates and pauses gif on hover
-$(document).on('click', '.playOnHover', function () {
-    $(this).attr('src', $(this).data('animated'));
+//animates and pauses gif on click and mousehover
+$(document).on('click', '.playOnClick', function () {
+    var state = $(this).attr('data-state')
+    console.log(state);  
+    if (state === "still") {
+        $(this).attr('src', $(this).attr("data-animated"));
+        $(this).attr("data-state", "animate")
+    } else {
+        $(this).attr('src', $(this).attr("data-paused"));
+        $(this).attr("data-state", "still")
+    }
+
+    //$(this).attr('src', $(this).data('animated'));
 });
-$(document).on('mouseleave', '.playOnHover', function () {
-    $(this).attr('src', $(this).data('paused'));
-});
+
 // This function handles events where one button is clicked
 $("#addShow").on("click", function (event) {
     event.preventDefault();

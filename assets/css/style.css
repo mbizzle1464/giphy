@@ -4,6 +4,9 @@
 body {
     background-color: #d3d3d3;  
 }
+.col-xs-12 {
+    padding: 0px;   
+}
 .gif-bg {
     background: url('https://media.giphy.com/media/3oz8xOvhnSpVOs9xza/giphy.gif') no-repeat center center;
     width: 100%;
@@ -66,4 +69,9 @@ h5 {
     font-size: 18px;
     text-align: center; 
     line-height: 200%;  
+}
+.footer {
+    display: flex;  
+    text-align: center; 
+    justify-content: space-between;    
 }
