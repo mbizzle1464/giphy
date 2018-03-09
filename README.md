@@ -4,7 +4,7 @@
 
 ### Try it out now [https://mbizzle1464.github.io/giphy/]!
 
-## Watch the magic happen. 
+### Watch the magic happen. 
 
 
 # Original Instructions for assignment 
