@@ -1,10 +1,10 @@
 # TV Giphy 
 
-## Welcome to TV Giphy! On this page, we showed you what's on our DVR. Now, it's your turn. Add a show to the array and then click on your show button. 
-
 ### Try it out now [https://mbizzle1464.github.io/giphy/]!
 
 ### Watch the magic happen. 
+
+##### On this page, we showed you what's on our DVR. Now, it's your turn. Add a show to the array and then click on any show's button. Animate a gif? Click on it. Stop the animation? Click again. Filter through and see what comes up. Enjoy!   
 
 
 # Original Instructions for assignment 
