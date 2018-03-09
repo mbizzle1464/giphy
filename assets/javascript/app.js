@@ -30,7 +30,7 @@ function renderButtons() {
     $('.showBtn').on('click', function () {
         $('.display').empty();
 
-        var baseURL = "http://api.giphy.com/v1/gifs/search?&q=tv+show+";
+        var baseURL = "https://api.giphy.com/v1/gifs/search?&q=tv+show+";
         var thisShow = $(this).attr('data-name');
         var params = "&limit=12";   
         var APIKey = "&api_key=yTrK5avjcqnYqEihaFaYLBpUIXGX7M4o";
